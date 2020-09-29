@@ -7,6 +7,7 @@ body {
     min-width:320px;
     font-family: 'TT Lakes Condensed';
     height:597px;
+    margin: 0;
 }
 
 .header {
@@ -14,25 +15,25 @@ body {
     display:flex;
     background-color: ffffff;
     align-items: center;
+    position: relative;
 }
 
 .header__button-burger{
   padding:0px;
-  margin-top: 24px;
-  margin-bottom: 24px;
   margin-left:16px;
-  background-color: white;
   border: 0;
+  cursor: pointer;
 }
-
+.header__button-burger--img{
+    background-image: url(img/header/burger.png);
+}
 .logo {
     margin-left: 16px;
-    margin-top: 19px;
-    margin-bottom: 24px;
     background-image: url(img\img logo\Group.png);
     display: flex;
     align-items: center;
     padding: 0;
+    cursor: pointer;
 }
 .logo::after{
     content: '';
@@ -44,21 +45,54 @@ body {
 }
 .header__buttons{
     display: none;
+}
+.header__buttons-list{
     list-style-type: none;
 }
-.info__buttons{
+.info__buttons-list{
+    list-style-type: none;
+}
+.header__button--call{
+    background-image: url(img/header/call.png);
+}
+.header__button--chat{
+    background-image: url(img/header/chat.png);
+}
+.header__button--profile{
+    background-image: url(img/header/profile.png);
+}
+.header__button--repair{
+    background-image: url(img/header/repair.png);
+}
+.header__button--checkstatus{
+    background-image: url(img/header/checkstatus.png);
+}
+.info-buttons{
     display: flex;
     align-items: center;
     margin-left: auto;
     padding: 0;
-    list-style-type: none;
     margin-right: 16px;
+}
+
+.info-buttons__link-title{
+    display: none;
+}
+.info-buttons__style{
+   margin-right: 16px;
+}
+.button{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
 }
 .button-style{
     padding: 0;
     background-color: white;
-    border: 0;
     margin-right: 16px;
+    cursor: pointer;
 }
 .shadow{
    height:1px;
@@ -81,20 +115,27 @@ body {
 .main__button{
     display:none;
 }
-
+.main__title::before{
+    content: '';
+    background-image: url(img/highlight.png);
+    height: 40px;
+    width: 4px;
+    margin-right: 16px;
+}
 .main__title{
-    margin-left: 16px;
-    margin-top: 24px;
+    margin-left: 26px;
     margin-bottom:0px;
+    margin-top: 24px;
+    display: flex;
 }
 
 .title {
-    font-family: TT Lakes;
+    font-family: TT Lakes ;
     font-size: 28px;
     line-height: 40px;
-    letter-spacing:-0,6px;
+    letter-spacing: 0,6px;
 }
-nav{
+.nav{
     display: flex;
     width: 100%;
     padding: 0;
@@ -107,7 +148,10 @@ nav{
     flex-wrap: nowrap;
     list-style-type: none;
 }
-
+.main__menu-list{
+    margin-top: 24px;
+    padding: 10px;
+}
 .main__menu-type{
     margin-top:24px;
     padding-left: 16px;
@@ -116,6 +160,8 @@ nav{
     padding-bottom: 8px;
     background-color:f8f8f8;
     border: none;
+    cursor: pointer;
+
 }
 
 .main__menu_active{
@@ -284,11 +330,33 @@ nav{
     }
    
     .header{
-        height:88px;
-        background: #F8F8F8;
+        height:0;
+    }
+    .header__button-burger{
         display: none;
     }
-   
+    .logo{
+        display: none;
+    }
+    .header__buttons{
+        display: none;
+    }
+    .info-buttons{
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        top: 8px;
+        right: 24px;
+    }
+    .info-buttons__link{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .info-buttons__link-title{
+        display: flex;
+        margin-right: 16px;
+    }
     .main__button{
         display: flex;
         margin-top: 26px;
