@@ -30,39 +30,42 @@ body {
     background-image: url(img/header/burger.png);
 }
 .logo {
+    background-image: url(img\img logo\Group.png); 
+}
+.header__logo{
     margin-left: 16px;
-    background-image: url(img\img logo\Group.png);
     display: flex;
     align-items: center;
     padding: 0;
     cursor: pointer;
 }
-.logo::after{
+.logo::before{
     content: '';
     background-image: url(img/divider.png);
-    height: 40px;
+    height: 30px;
     width: 2px;
     padding: 0;
-    margin-left: 16px;
+    margin-right: 16px;
+
 }
 .contact-list{
     display: none;
 }
-.header__buttons-list{
+.header__contact-item{
     list-style-type: none;
 }
-.info__buttons-list{
+.info-list__item{
     list-style-type: none;
     margin-right: 16px;
 
 }
-.header__button--call{
+.header__contact--call{
     background-image: url(img/header/call.png);
 }
-.header__button--chat{
+.header__contact--chat{
     background-image: url(img/header/chat.png);
 }
-.header__button--profile{
+.header__contact--profile{
     background-image: url(img/header/profile.png);
 }
 .header__button--repair{
@@ -89,18 +92,8 @@ body {
     cursor: pointer;
     border: 0;
 }
-.button-style{
-    padding: 0;
-    background-color: white;
-    cursor: pointer;
-}
-.shadow{
-   height:1px;
-   background: #D9FFF5; 
-}
 
 .main {
-    padding: 0;
     height:509px;    
     background-color: f8f8f8;
     display:flex;
@@ -123,7 +116,6 @@ body {
     margin-right: 16px;
 }
 .main__title{
-    margin-left: 26px;
     margin-bottom:0px;
     margin-top: 24px;
     display: flex;
@@ -142,14 +134,18 @@ body {
 }
 .nav__list {
     display:flex;
-    overflow: hidden;
+    overflow: scroll;
     flex-direction: row;
     flex-wrap: nowrap;
     list-style-type: none;
+    padding-left: 20px;
+}
+a {
+    text-decoration: none;
 }
 .nav__item{
     margin-top: 24px;
-    padding: 10px;
+    padding-bottom: 10px;
 }
 .main__menu-type{
     padding-left: 16px;
@@ -223,12 +219,13 @@ body {
 
 .main-image {
     width: 100%;
-    height: 230px;
+    height: 100%;
     margin-top: 16px;
-
+    
 }
 .img1{
     width: 100%;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -242,13 +239,15 @@ body {
         display: flex;
         align-content: center;
     }
-    .header__buttons-list{
+    .header__contact-item{
         margin-right: 16px;
 
     }
+    .header__contact-list{
+        margin-right: 16px;
+    }
     .contact-list {
         flex-grow: 1;
-        margin-right: 16px;
         display: flex;
         justify-content: flex-end;
     }
@@ -263,13 +262,7 @@ body {
         margin-right: 16px;
     }
      
-    .shadow{
-    height:1px;
-    background: #D9FFF5; 
-    }
-
     .main {
-        padding: 0;
         height:416px;    
         background-color: f8f8f8;
         display:flex;
@@ -347,7 +340,7 @@ body {
         top: 8px;
         right: 24px;
     }
-    .info-buttons__link{
+    .info-list__link{
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
