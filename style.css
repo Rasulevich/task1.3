@@ -272,6 +272,9 @@ a {
     .main__header{
         width: 100%;
     }
+    .nav__list{
+        overflow: hidden;
+    }
     .section {
         display: flex;
         flex-wrap: wrap;
@@ -348,6 +351,9 @@ a {
     .info-buttons__link-title{
         display: flex;
         margin-right: 16px;
+    }
+    .nav__list{
+        overflow: hidden;
     }
     .main__button{
         display: flex;
