@@ -16,11 +16,13 @@ body {
     background-color: ffffff;
     align-items: center;
     position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid pink;
 }
 
 .header__button-burger{
   padding:0px;
-  margin-left:16px;
   border: 0;
   cursor: pointer;
 }
@@ -43,7 +45,7 @@ body {
     padding: 0;
     margin-left: 16px;
 }
-.header__buttons{
+.contact-list{
     display: none;
 }
 .header__buttons-list{
@@ -51,6 +53,8 @@ body {
 }
 .info__buttons-list{
     list-style-type: none;
+    margin-right: 16px;
+
 }
 .header__button--call{
     background-image: url(img/header/call.png);
@@ -67,20 +71,17 @@ body {
 .header__button--checkstatus{
     background-image: url(img/header/checkstatus.png);
 }
-.info-buttons{
+.info-list{
     display: flex;
     align-items: center;
     margin-left: auto;
     padding: 0;
-    margin-right: 16px;
 }
 
 .info-buttons__link-title{
     display: none;
 }
-.info-buttons__style{
-   margin-right: 16px;
-}
+
 .button{
     width: 40px;
     height: 40px;
@@ -91,7 +92,6 @@ body {
 .button-style{
     padding: 0;
     background-color: white;
-    margin-right: 16px;
     cursor: pointer;
 }
 .shadow{
@@ -140,20 +140,18 @@ body {
     width: 100%;
     padding: 0;
 }
-.main__menu {
+.nav__list {
     display:flex;
     overflow: hidden;
-    margin-top: 24px;
     flex-direction: row;
     flex-wrap: nowrap;
     list-style-type: none;
 }
-.main__menu-list{
+.nav__item{
     margin-top: 24px;
     padding: 10px;
 }
 .main__menu-type{
-    margin-top:24px;
     padding-left: 16px;
     padding-top: 8px;
     padding-right: 10px;
@@ -243,18 +241,19 @@ body {
         background-color: #FFFFFF;
         display: flex;
         align-content: center;
-        margin: 0;
-        padding: 0;
     }
-   
-    .header__buttons {
+    .header__buttons-list{
+        margin-right: 16px;
+
+    }
+    .contact-list {
         flex-grow: 1;
         margin-right: 16px;
         display: flex;
         justify-content: flex-end;
     }
 
-    .header__buttons::after {
+    .contact-list::after {
         content: '';
         background-image: url(img/divider.png);
         height: 40px;
@@ -338,10 +337,10 @@ body {
     .logo{
         display: none;
     }
-    .header__buttons{
+    .contact-list{
         display: none;
     }
-    .info-buttons{
+    .info-list{
         display: flex;
         position: absolute;
         z-index: 1;
