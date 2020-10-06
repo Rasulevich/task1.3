@@ -21,13 +21,19 @@ body {
     border-bottom: 1px solid pink;
 }
 
-.header__button-burger{
-  padding:0px;
-  border: 0;
-  cursor: pointer;
+.header__menu-btn{
+    display: flex;
+    align-items: center;  
 }
-.header__button-burger--img{
+.button--burger-menu{
     background-image: url(img/header/burger.png);
+}
+.button{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
 }
 
 .header__logo{
@@ -53,29 +59,27 @@ body {
     list-style-type: none;
 }
 
-.contact-list__call{
+.button--call{
     background-image: url(img/header/call.png);
 }
-.contact-list__chat{
+.button--chat{
     background-image: url(img/header/chat.png);
 }
-.contact-list__profile{
+.button--profile{
     background-image: url(img/header/profile.png);
 }
-.ui-button__repair{
+.button--repair{
     background-image: url(img/header/repair.png);
 }
-.ui-button__checkstatus{
+.button--checkstatus{
     background-image: url(img/header/checkstatus.png);
 }
 .info-list{
     display: flex;
     align-items: center;
-    margin-left: auto;
-    padding: 0;
 }
 .info-list__item{
-    list-style-type: none;
+    list-style-type: none;   
 }
 .info-list__item:first-child{
     margin-right: 16px;
@@ -83,15 +87,6 @@ body {
 .info-list__title{
     display: none;
 }
-
-.button{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    cursor: pointer;
-    border: 0;
-}
-
 .main {
     height:509px;    
     background-color: f8f8f8;
@@ -99,7 +94,10 @@ body {
     flex-wrap: wrap;
     align-items:flex-start;
 }
-
+.header__info-buttons{
+    margin-left: auto;
+    padding: 0;
+}
 .main__title::before{
     content: '';
     background-image: url(img/highlight.png);
@@ -112,7 +110,6 @@ body {
     margin-top: 24px;
     display: flex;
 }
-
 .title {
     font-family: TT Lakes ;
     font-size: 28px;
@@ -133,7 +130,6 @@ body {
     list-style-type: none;
     justify-content: space-between;
 }
-
 .nav__item{
     padding: 10px;
     margin-left: -20px;
@@ -146,7 +142,6 @@ body {
     padding-left: 16px;
     padding-right: 20px;
 }
-
 .nav__link_active{
     background: #FFFFFF;
     border: 2px solid #B8FFEC;
@@ -211,7 +206,7 @@ body {
     margin-top: 16px;
     
 }
-.img1{
+.img-logo{
     width: 100%;
 
 }
@@ -234,7 +229,6 @@ body {
     }
     .contact-list__item{
         margin-right: 16px;
-
     }
     .contact-list::after {
         content: '';
@@ -244,7 +238,9 @@ body {
         padding: 0;
         margin-right: 16px;
     }
-     
+    .contact-list__button{
+        display: flex;
+    }
     .main {
         height:416px;    
         background-color: f8f8f8;
@@ -313,7 +309,7 @@ body {
     .header{
         height:0;
     }
-    .header__button-burger{
+    .header__menu-btn{
         display: none;
     }
     .logo{
@@ -382,7 +378,7 @@ body {
         border-radius: 6px;
         margin-right: 16px;
     } 
-    .img1{
+    .img-logo{
         background: #F8F8F8;
         border-radius: 6px; 
         width: 531px;
