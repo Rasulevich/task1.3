@@ -6,6 +6,9 @@
     font-family: 'TT Lakes Bold';
     src: url('Fonts/TTLakes-Bold.woff')
 }
+body{
+    margin: 0;
+}
 .menu-container{
     width: 100%;
     min-width: 320px;
@@ -78,11 +81,11 @@
     color:#7E7E82
 }
 
-.menu__nav-item--active:before{
+.menu__nav-link--active:before{
     content: '';
     position: absolute;
-    top:125px;
-    left:8px;
+    top:12px;
+    left:-18px;
     height: 32px;
     width: 4px;
     background-color:#41F6D7;
@@ -132,27 +135,24 @@
 
 .menu__lang-list{
     margin-top: 40px;
-}
-
-.lang-list{
     display: flex;
     padding: 0;
     font-family:'TT Lakes Medium', sans-serif;
 }
 
-.lang-list__item{
+.menu__lang-list-item{
     list-style-type: none;
     margin-right: 8px;
 }
 
-.lang-list__link{
+.menu__lang-list-link{
     text-decoration: none;
     color: #1B1C21;
 }
 
-.lang-list__link--active{
+.menu__lang-list-link--active{
     color: #7E7E82;
 }
-.lang-list__link:hover{
+.menu__lang-list-link:hover{
     color: #7E7E82;
 }
