@@ -4,15 +4,14 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="service.css">
         <link rel="stylesheet" href="style.css">
-         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> 
-
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <section class="section">
             <h1 class="section__title title-service">Ремонт техники различных брендов</h1>
-            <div class="brands brands--open swiper-container">
+            <div class="brands swiper-container">
                 <ul class="brands__list swiper-wrapper">
                     <li class="brands__item swiper-slide">
                         <a class="brands__link " href="#">
@@ -91,15 +90,6 @@
             </div>
             <button class="next-button section__next-button">Показать все</button>
         </section>
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 'auto',
-                pagination: {
-                el: '.swiper-pagination',
-              },
-            });
-            
-          </script>
-        <script></script>
+        <script src="index.js"></script>
     </body>
 </html>
