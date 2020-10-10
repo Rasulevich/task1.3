@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('Fonts/TTLakesCondensed-Thin.woff')
+}
+
+.brands{
+    height: 234px;
+    overflow: hidden;
+    background-color:f8f8f8;
+    display: flex;
+}
+.section{
+    background-color: #F8F8F8;
+}
+.brands__list {
+    display:flex;
+    padding: 0;
+    margin: 0;
+}
+
+.brands__item{
+    list-style-type: none;
+    height:72px ;
+    width: 240px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    display: block;
+}
+
+.button--open{
+    background-image: url(img/service/go.png);
+    background-color: white;
+}
+
+.brands__link{
+    text-decoration: none;
+    width: 240px;
+    height:72px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 6px;
+}
+.title-service{
+    width: 100%;
+    height: 48px;
+    font-family: "TT Lakes Medium",sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7e7e82;
+    text-transform:uppercase;
+}
+
+.section__title{
+    padding: 16px;
+    padding-bottom: 0;
+    margin-bottom: 16px;
+    margin: 0;
+}
+
+.brands__button{
+    margin-left: auto;
+}
+.section__next-button{
+    visibility: hidden;    
+}
+.brands__pagination{
+    display: block;
+    margin-top: 50px;
+    z-index: 1;
+}
+@media (min-width:768px) {
+    .section{
+        height: 100%;
+    }
+    .brands{
+        height: 180px;
+    }
+   
+    .brands__list{
+        min-width: 768px;
+        flex-wrap: wrap;
+        display: flex;
+        overflow: hidden;
+        padding: 0; 
+
+    }
+    .brands__item{
+        width: 224px;
+        margin-left:24px;
+        overflow: hidden;
+        max-height: 180px;
+    }
+    .brands__button{
+        margin-left: auto;
+    }
+    .brands__link{
+        width: 224px;
+        height: 72px;
+    }
+    .title-service{
+        width: 100%;
+        height: 56px;
+    }
+    .section__title{
+        padding: 24px;
+        background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+        padding-bottom: 0;
+        margin-bottom: 12px;
+    }
+    .brands__pagination{
+        display: none;
+    }
+    .section__next-button{
+        margin-left: 28px;
+        margin: 28px;
+        visibility: visible;    
+        display: block;
+    }
+    .next-button{
+        display:block;
+    }    
+}
+
+<script>
+.brands--open{
+    height: auto;
+}
+</script>
