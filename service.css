@@ -4,10 +4,9 @@
 }
 
 .brands{
-    height: 234px;
+    height: 140px;
     overflow: hidden;
     background-color:f8f8f8;
-    display: flex;
 }
 .section{
     background-color: #F8F8F8;
@@ -16,17 +15,17 @@
     display:flex;
     padding: 0;
     margin: 0;
+    flex-wrap: nowrap;
 }
 
 .brands__item{
     list-style-type: none;
-    height:72px ;
-    width: 240px;
+    max-height:72px ;
+    max-width: 240px;
     margin-bottom: 16px;
     margin-left: 16px;
     border: 1px solid #EAEAEA;
     border-radius: 6px;
-    display: block;
 }
 
 .button--open{
@@ -69,11 +68,7 @@
 .section__next-button{
     visibility: hidden;    
 }
-.brands__pagination{
-    display: block;
-    margin-top: 50px;
-    z-index: 1;
-}
+
 @media (min-width:768px) {
     .section{
         height: 100%;
@@ -127,8 +122,8 @@
     }    
 }
 
-<script>
+/* <script>
 .brands--open{
     height: auto;
 }
-</script>
+</script> */
