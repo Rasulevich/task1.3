@@ -44,7 +44,13 @@
     background: #ffffff;
     border-radius: 6px;
 }
-.title-service{
+
+.section__title{
+    padding: 16px;
+    padding-bottom: 0;
+    margin-bottom: 16px;
+    margin: 0;
+    background: linear-gradient(90deg, #F8F8F8 40%, #FFFFFF 60%);
     width: 100%;
     height: 48px;
     font-family: "TT Lakes Medium",sans-serif;
@@ -53,13 +59,6 @@
     letter-spacing: -0.2px;
     color: #7e7e82;
     text-transform:uppercase;
-}
-
-.section__title{
-    padding: 16px;
-    padding-bottom: 0;
-    margin-bottom: 16px;
-    margin: 0;
 }
 
 .brands__button{
@@ -96,15 +95,13 @@
         width: 224px;
         height: 72px;
     }
-    .title-service{
-        width: 100%;
-        height: 56px;
-    }
     .section__title{
         padding: 24px;
-        background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+        background: linear-gradient(90deg, #F8F8F8 40%, #FFFFFF 60%);
         padding-bottom: 0;
         margin-bottom: 12px;
+        width: 100%;
+        height: 56px;
     }
     .brands__pagination{
         display: none;
