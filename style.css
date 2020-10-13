@@ -177,14 +177,14 @@ body {
     background: url(img/expand.png) no-repeat;
     height: 10px;
     width: 5px;
-    padding: 5;
+    padding: 5px;
     margin-left: 8px;
     display: flex;
     margin-right: 16px;
 }
 
 .next-button{
-    background-color: f8f8f8;
+    background-color: #f8f8f8;
     border: none;
     font-family: TT Lakes;
     font-size: 16px;
